@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .topnav {
+    display: flex;
+  }
+  
+  .topnav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .dropdown {
+    display: none;
+    position: relative;
+  }
+  
+  .dropbtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #555;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  /* Profile picture */
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  /* Main content container */
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* This will make the image circular */
+  }
+  
+  .content {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  /* Enroll button */
+  .enroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Mobile responsive styles */
+  @media only screen and (max-width: 600px) {
+    .topnav {
+      display: none;
+    }
+  
+    .dropdown {
+      display: block;
+    }
+  
+    .dropdown-content {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .dropdown-content a {
+      display: block;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .enroll-btn {
+      position: static;
+      margin-top: 20px;
+    }
+  }
+  
